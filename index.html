@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Guru Modern</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #0f0204; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+
+  <iframe src="https://script.google.com/macros/s/AKfycbzJLkybJE_rlNtsWidZ8uOvAQ96Njzf7v-B8HpINaVWZw8FwF_QWrNJM8qmgGL3lylJ/exec"></iframe>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('PWA Guru Worker Registered'))
+        .catch(err => console.error('PWA Error', err));
+    }
+  </script>
+</body>
+</html>
